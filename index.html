@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Прямоугольник с изображением и меню</title>
+<style>
+    .container {
+        position: relative;
+        width: 500px; /* ширина прямоугольника */
+        height: 700px; /* высота прямоугольника */
+        border: 2px solid black;
+        background-color: white;
+    }
+
+    .menu {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* Равномерное распределение между ячейками */
+        padding: 0; /* Удаление отступов */
+    }
+
+    .menu-item {
+        width: calc(25%); /* ширина каждой ячейки меню */
+        height: 50px;
+        background-color: #598025; /* Цвет ячеек меню */
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centered-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="C:\Users\User\Desktop\crypto\images.jpg" alt="Жаба Пепе" class="centered-image">
+    <div class="menu">
+        <div class="menu-item">Ячейка 1</div>
+        <div class="menu-item">Ячейка 2</div>
+        <div class="menu-item">Ячейка 3</div>
+        <div class="menu-item">Ячейка 4</div>
+    </div>
+</div>
+
+</body>
+</html>
